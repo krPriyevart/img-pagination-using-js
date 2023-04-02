@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	 <title>Untitled</title>
+	 <meta charset="UTF-8"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <style>
+	
+	 .main-box{
+	 width:100%;
+	 height:auto;
+	 margin-top: 50px;
+	 box-sizing:border-box;
+	 border:0px solid blue;
+	 display: flex;
+	 justify-content: center;
+	 }
+     .main-box .main-box2{
+	 width:320px;
+	 height:380px;
+	 margin-top: 0px;
+	 box-sizing:border-box;
+	 border:0px solid blue;
+	 
+	
+		 
+	 }
+	 .main-box .main-box2 .sub-box {
+	 width: 320px;
+	 height: 251px;
+	 overflow: hidden;
+		 
+	 
+	 border: 0px solid red;
+	 
+	  }
+	 .t-heading{
+	  width: 320px;
+	  height: 70px;
+	  color: limegreen;
+	  font-family: sans-serif;
+	  font-size: 26px;
+	  font-weight:bold;
+	  border:0px solid green;
+	  
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	
+	  }
+     .main-box .main-box2 .sub-box .sub-box2{
+	 width: 1910px;
+	 height: 251px;
+	 float:left;
+	 border: 0px solid red;
+	 
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-around;
+	  
+	 }
+	 .main-box .main-box2 .sub-box .sub-box2 .sub-box3 img{
+	 width: 250px;
+	 height:auto;
+	 float: left;
+	 }
+	
+	 .sub-box3{
+	 width: 260px;
+	 height: 251px;
+	 border: 0px solid green;
+	 float: left;
+	 display: flex;
+	 align-content: center;
+	 justify-content: center;
+	 }
+	#faclick{
+	font-size: 40px;
+	color: green;
+	display: flex;
+	align-items: center;
+	}
+	 
+	 </style>
+ </head>
+	 <body>
+		
+	 <div  class="main-box">
+	 <i class="fa fa-chevron-circle-left fa-gradient" id="faclick" onClick="move(-320)" ></i>
+		 <div class="main-box2">
+			 <div class="t-heading">Best Deal Of The Day</div>
+	 <div class="sub-box" id="b_scroll">
+		 
+		 
+	 <div  class="sub-box2" >
+		 	 
+	 <div  class="sub-box3 ">
+	 <img src= "1.jpg">
+	 </div>
+	  <div  class="sub-box3">
+	 <img src= "2.jpg">
+	 </div>
+	  <div  class="sub-box3">
+	 <img src= "3.jpg">
+	 </div>
+	  <div  class="sub-box3 ">
+	 <img src= "4.png">
+	 </div>
+	  <div  class="sub-box3">
+	 <img src= "5.jpg">
+	 </div>
+	  <div  class="sub-box3">
+	 <img src= "6.png">
+	 </div>
+	  
+	 </div>
+		
+	 </div>
+			 </div>
+		 <i class="fa fa-chevron-circle-right" id="faclick" onClick="move(320)" ></i>
+		 
+	 </div>
+	 <script>
+		 
+		 function move(x){
+			 
+			 var b_scroll = document.getElementById("b_scroll");
+			 b_scroll.scrollBy(x,0);
+			 
+		 }
+		 
+		//function move(x){
+		//	document.getElementById("right").scrollBy(x,0);
+		//}	 
+		 
+		 
+		 
+	 </script>
+	 </body>
+ </html>
